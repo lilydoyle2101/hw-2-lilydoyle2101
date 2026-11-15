@@ -1,0 +1,36 @@
+---
+title: "HW 8: Interaction terms"
+author: "Lily Doyle"
+date: "November 19, 2026"
+format: pdf
+---
+
+# Example 1: Smoking, PRS, and lung function
+
+## Exercise 1
+
+The model includes an interaction between PRS and pack-years, so the relationship between PRS and FEV1/FVC depends on how much a person has smoked. For people with 10 or fewer pack-years, a one-unit increase in PRS is associated with a 0.03 decrease in FEV1/FVC, holding the other variables constant. For the other pack-years groups, we add the interaction term to -0.03, so the slope becomes more negative as pack-years go up (for example, -0.03 + -0.017 = -0.047 for more than 50 pack-years). In other words, a higher PRS is linked to lower lung function, and this relationship is stronger for heavier smokers.
+
+## Exercise 2
+
+Yes. All of the PRS × pack-years interaction terms have p-values less than 0.001. This means there is statistically significant evidence that the relationship between PRS and FEV1/FVC depends on pack-years of smoking.
+
+## Exercise 3
+
+Because there is an interaction with PRS, this coefficient applies when PRS = 0. For people with a PRS of 0, those with more than 50 pack-years are predicted to have an FEV1/FVC ratio that is 0.04 lower than people with 10 or fewer pack-years, holding the other variables constant.
+
+# Example 2: Gorilla space use
+
+## Exercise 4
+
+The model includes an interaction between availability of fruit and frugivory, so the relationship between availability of fruit and daily travel distance depends on frugivory. Holding the other variables constant, the slope for availability of fruit is -0.028 + (-0.130 × frugivory). Since the interaction term is negative, the more frugivory there is, the more daily travel distance decreases as availability of fruit goes up. The interaction term is statistically significant (p < 0.001).
+
+## Exercise 5
+
+Because there is an interaction with availability of fruit, this coefficient applies when availability of fruit = 0. When availability of fruit is 0, a one-unit increase in frugivory is associated with a 0.041 decrease in daily travel distance, holding the other variables constant.
+
+# Example 3: California Proposition 56
+
+## Exercise 6
+
+Yes, I think there is evidence that the "effect of Prop 56" depends on income status. For low-income adults, predicted smoking prevalence went from 14.0% before Prop 56 to 6.8% after, a drop of 7.2 percentage points. For high-income adults, it only went from 4.5% to 4.2%, a drop of 0.3 percentage points. Also, for low-income adults the before and after intervals (12.8 to 15.1 and 5.3 to 8.3) do not overlap, while for high-income adults they overlap a lot. Since the change is much bigger for low-income adults than for high-income adults, the effect of Prop 56 seems to depend on income.
